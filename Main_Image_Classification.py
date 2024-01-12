@@ -1,8 +1,8 @@
 import pytorch_lightning as pl
 from pytorch_lightning import loggers as pl_loggers
 from pytorch_lightning.callbacks import EarlyStopping
-from EmilBordin969367_data_loading_assignment_4 import DataLoading
-from EmilBordin969367_neural_network_assignment_4 import CropsCNN
+from Data_Loading import DataLoading
+from VGG16_Implementation import CropsCNN
 
 #Exercise 6: Training and Evaluation
 if __name__ == "__main__":
@@ -20,6 +20,6 @@ if __name__ == "__main__":
     trainer.fit(model, train_dataloaders=train_loader, val_dataloaders=val_loader)
     trainer.test(ckpt_path="best", dataloaders=test_loader)
 
-#Exercise 8: Results
+#Results
 #Training Accuracy: 0.8049
 #Test Accuracy: 0.6222222447395325
