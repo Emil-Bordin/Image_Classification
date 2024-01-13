@@ -6,7 +6,7 @@
 - Implementiation der Funktionen `__init__()` und `forward()`.
 - Transfer Learning der Architektur mit einem vorab trainierten VGG16-Modell aus dem PyTorch "models"-Paket, wobei die Layer eingefroren wurden und der letzte Layer durch einen fully connected Layer ersetzt wurde
 
-### ÜOptimierer
+### Optimierer
 - Implementation `configure_optimizers()`, mit dem Adam-Optimierer mit einer Lernrate von 0.01 und verwende den StepLR-Lernratenplaner
 
 ### Trainings-, Validierungs- und Test-Schritt
